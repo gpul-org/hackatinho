@@ -146,7 +146,7 @@ section ul li:before {
 	color: #fec503
 }
 .navbar-brand > img {
-	width: 10%;
+	width: 55px;
 }
 .navbar-default .navbar-collapse {
 	border-color: rgba(255,255,255,.02)
@@ -859,4 +859,38 @@ and (max-width : 480px) {
 	margin-top: 7px;
 	font-size: 20px;
 }
+}
+
+/* Location */
+#location {
+	background-image: url(../images/background/surfistas.jpg);
+	background-repeat: none;
+	background-attachment: scroll;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	text-align: center;
+	color: #fff;
+	height: 400px;
+}
+
+#map {
+  padding: 0px 5px 150px 5px;
+  margin: 5px 5px 0px 10px;
+}
+
+.naming {
+  margin-left: -200px;
+  text-align: left;
+  padding-top: 100px;
+  font-size: 10px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.naming > a {
+	color: #fed136;
 }

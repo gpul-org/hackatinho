@@ -44,6 +44,9 @@
 							<a class="page-scroll" href="#program">Programa</a>
 						</li>
 						<li>
+							<a class="page-scroll" href="#location">Onde é?</a>
+						</li>
+						<li>
 							<a class="page-scroll" href="#organizers">Colaboradores</a>
 						</li>
 						<li>
@@ -259,14 +262,14 @@
 
 		<section id="program">
 			<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<div class="section-title">
-						<h2>Programa e inscrición</h2>
-						<p>.</p>
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<div class="section-title">
+							<h2>Programa e inscrición</h2>
+							<p>.</p>
+						</div>
 					</div>
 				</div>
-			</div>
 			</div>
 		</section>
 
@@ -300,6 +303,45 @@
 				</div>
 			</div>
 		</section>
+
+		<section id="location">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<div class="section-title">
+							<h2 style="color:white;">Localización</h2>
+							<p>.</p>
+						</div>
+					</div>
+				</div>
+				<h5 class="naming">Fotografía de <a target="_blank" href="https://www.flickr.com/photos/gaby1/6517808577/in/photolist-aVXtpX-r6Vc5i-pw8Yfv-rekq9z-rcMesS-qsQiT3-prZecJ-quyZz7-ewbocz-p8KUwz-nyvXmT-qckMLQ-q39STo-psHhhw-pfBizF-sjtpjy-qgYbnP-mgWCng-riQRYZ-pfCoba-oz9aS8-pooaJf-dvP922-rmfXmv-nFgNZW-pctfAZ-rfSbxX-kydtFB-nbfGrj-qyMZM3-oQyJxn-89fVXV-qbRHko-rvFUAS-hqgK6v-oFLcmG-qkQABi-nQWb4h-hqgKZe-phS7kt-qf1hvG-nR1Emx-nsfN3h-b1pNpp-qiKHhC-sdhq2z-opiyKu-kfrMfi-qConZK-qBKRAv">Jacobo Cancela</a></h5>
+			</div>
+		</section>
+
+	<!-- Map Section -->
+
+    <section id="map" class="pfblock pfblock-gray">
+      <div class="">
+
+          <div class="row">
+
+            <div class="pfblock-header">
+              <div class="pfblock-line"></div>
+              <div class="pfblock-subtitle">
+              </div>
+            </div>
+            <div style="position:absolute; height: auto;width:100%">
+              <div style="height: 500px" id="leafmap"></div>
+            </div>
+            <div style="height: 340px; position: relative; z-index: -1"></div>
+            <small>
+              <a href="http://www.openstreetmap.org/?mlat=43.3694&mlon=-8.4220#map=16/43.3694/-8.4220">Ver en un mapa más grande</a>
+            </small>
+
+          </div>
+      </div>
+
+    </section>
 
 		<section id="organizers" class="light-bg">
 			<div class="container">
@@ -560,5 +602,36 @@
 		<script src="js/jquery.appear.js"></script>
 		<script src="js/SmoothScroll.min.js"></script>
 		<script src="js/mooz.themes.scripts.js"></script>
+
+		<!-- Map -->
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+		<script type="text/javascript">
+      $(function() {
+      var layer = L.tileLayer(
+      // 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}'
+      // 'http://{s}.tile.osm.org/{z}/{x}/{y}.png'
+      'http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'
+      , {
+      attribution: 'Map tiles by <a href="http://cartodb.com/attributions#basemaps">CartoDB</a>, under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>. Data by <a href="http://www.openstreetmap.org/">OpenStreetMap</a>, under ODbL.'
+      });
+
+      var map = L.map('leafmap', {
+        scrollWheelZoom: false,
+        center: [43.3695, -8.4143],
+        zoom: 16
+      });
+
+      var marker = L.marker([43.3695, -8.4217]).addTo(map);
+			marker.bindPopup(
+      "<h5><b><a href='http://istoenormal.org/es/'>NORMAL</a></b></h5>" +
+      "Paseo de Ronda, 47. 15011 - A Coruña<br />" +
+      "<a target='_blank' href='http://www.openstreetmap.org/?mlat=43.3694&mlon=-8.4220#map=16/43.3694/-8.4220'>Ver en OpenStreetMap</a>").openPopup();
+
+      map.addLayer(layer);
+      })
+    </script>
+
 	</body>
 </html>
