@@ -355,6 +355,19 @@ header .intro-text .intro-heading {
 	border-radius: 100px;
 	background-color: #fed136;
 	margin: 0 2px 4px;
+	font-size: 35px;
+}
+
+.ot-circle-small {
+	height: 55px;
+	width: 55px;
+	text-align: center;
+	line-height: 55px;
+	color: #FFFFFF;
+	/* border: 3px solid #000; */
+	border-radius: 100px;
+	background-color: #fed136;
+	margin: 0 2px 4px;
 	font-size: 24px;
 }
 
