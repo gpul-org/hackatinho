@@ -140,9 +140,13 @@ section ul li:before {
 	color: #fff;
 	font-family: "Montserrat",sans-serif;
 	padding: 0px;
+	margin-right: 0px
 }
 .navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:active,.navbar-default .navbar-brand.active {
 	color: #fec503
+}
+.navbar-brand > img {
+	width: 10%;
 }
 .navbar-default .navbar-collapse {
 	border-color: rgba(255,255,255,.02)
@@ -214,7 +218,7 @@ section ul li:before {
 --------------------*/
 
 header {
-	background-image: url(../images/demo/bg-sanza.jpg);
+	background-image: url(../images/background/hackathon1.jpg);
 	background-repeat: none;
 	background-attachment: scroll;
 	background-position: center center;
@@ -349,7 +353,7 @@ header .intro-text .intro-heading {
 	color: #FFFFFF;
 	/* border: 3px solid #000; */
 	border-radius: 100px;
-	background-color: #23AD21;
+	background-color: #fed136;
 	margin: 0 2px 4px;
 	font-size: 24px;
 }
@@ -624,6 +628,7 @@ figure.effect-bubba:hover p {
 	color: #989898;
 	font-size: 12px;
 	margin: 15px 0 10px;
+	padding-bottom: 10px;
 	text-transform: uppercase;
 	font-weight: 500;
 	letter-spacing: 2px;
@@ -777,12 +782,12 @@ font-size: 11px;
 	background-image: none;
 	border: 1px solid transparent;
 	border-radius: 4px;
-	background-color: #23AD21;
+	background-color: #fed136;
 }
 
 .btn-xl {
 color: #fff;
-    background-color: #23AD21;
+    background-color: #fed136;
     /* border-color: #726FB9; */
     font-family: "Open Sans",sans-serif;
     text-transform: uppercase;
