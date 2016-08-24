@@ -1,5 +1,4 @@
 
-
 ## Licencia
 Esta obra está baixo unha licenza:
 
