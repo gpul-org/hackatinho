@@ -228,6 +228,7 @@ header {
 	-o-background-size: cover;
 	text-align: center;
 	color: #fff;
+	height: 900px;
 }
 
 header .intro-text {
@@ -873,18 +874,17 @@ and (max-width : 480px) {
 	-o-background-size: cover;
 	text-align: center;
 	color: #fff;
-	height: 400px;
+	height: 500px;
 }
 
 #map {
-  padding: 0px 5px 150px 5px;
-  margin: 5px 5px 0px 10px;
+	padding-top: 5px;
 }
 
 .naming {
-  margin-left: -200px;
-  text-align: left;
-  padding-top: 100px;
+  margin-right: -200px;
+  text-align: right;
+  padding-top: 150px;
   font-size: 10px;
 	color: white;
 	text-transform: uppercase;
