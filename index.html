@@ -210,7 +210,7 @@
 								<h3>Proxectos de referencia</h3>
 								<p>Para ver o potencial dos datos abertos aquí temos unha pequena lista de proxectos que xeneran ou utilizan este tipo de datos, no botón poderás ver ou engadir algún máis que coñezas</p>
 								<p><a href="https://citybik.es/" target="_blank"><b>Citybik</b></a> - Compartición de bicicletas</p>
-								<p><a href="http://wheelmap.org/en/map" target="_blank"><b>Wheelmap</b></a> - Accesibilidade en cadeiras de rodas</p>
+								<p><a href="https://wheelmap.org/en/map" target="_blank"><b>Wheelmap</b></a> - Accesibilidade en cadeiras de rodas</p>
 								<p><a href="https://www.esios.ree.es/es" target="_blank"><b>Red electrica de España</b></a> - Consumos enerxéticos en tempo real</p>
 								<p><a href="http://dondevanmisimpuestos.es/" target="_blank"><b>¿A donde van mis impuestos?</b></a> - O título xa o dí todo</p>
 								<p><a href="https://forums.gpul.org/c/hackathino" target="_blank" class="page-scroll btn">Ver ou engadir máis exemplos</a></p>
@@ -489,7 +489,7 @@
             </div>
             <div style="height: 340px; position: relative; z-index: -1"></div>
             <small>
-              <a href="http://www.openstreetmap.org/?mlat=43.3694&mlon=-8.4220#map=16/43.3694/-8.4220">Ver en un mapa más grande</a>
+              <a href="https://www.openstreetmap.org/?mlat=43.3694&mlon=-8.4220#map=16/43.3694/-8.4220">Ver en un mapa más grande</a>
             </small>
 
     </section>
@@ -744,8 +744,8 @@
 		<!-- Bootstrap core JavaScript
 			================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/cbpAnimatedHeader.js"></script>
@@ -764,9 +764,9 @@
       var layer = L.tileLayer(
       // 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}'
       // 'http://{s}.tile.osm.org/{z}/{x}/{y}.png'
-      'http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'
+      'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png'
       , {
-      attribution: 'Map tiles by <a href="http://cartodb.com/attributions#basemaps">CartoDB</a>, under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>. Data by <a href="http://www.openstreetmap.org/">OpenStreetMap</a>, under ODbL.'
+      attribution: 'Map tiles by <a href="https://carto.com/attributions#basemaps">Carto</a>, under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>. Data by <a href="https://www.openstreetmap.org/">OpenStreetMap</a>, under ODbL.'
       });
 
       var map = L.map('leafmap', {
@@ -779,7 +779,7 @@
 			marker.bindPopup(
       "<h5><b><a href='http://istoenormal.org/es/' target='_blank'>NORMAL</a></b></h5>" +
       "Paseo de Ronda, 47. 15011 - A Coruña<br />" +
-      "<a target='_blank' href='http://www.openstreetmap.org/?mlat=43.3694&mlon=-8.4220#map=16/43.3694/-8.4220'>Ver en OpenStreetMap</a>").openPopup();
+      "<a target='_blank' href='https://www.openstreetmap.org/?mlat=43.3694&mlon=-8.4220#map=16/43.3694/-8.4220'>Ver en OpenStreetMap</a>").openPopup();
 
       map.addLayer(layer);
       })
