@@ -1,0 +1,57 @@
+
+.content {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.btn {
+  color: #fff;
+}
+
+#visitor-type {
+  padding-bottom: 0%;
+}
+
+#visitor-type .section-title > h2 {
+  margin-bottom: 3%;
+}
+
+.box {
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
+  padding-top: 3%;
+  padding-bottom: 15%;
+  transition-duration: 0.5s;
+  text-decoration: none;
+}
+
+.box:hover {
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
+  text-decoration: none;
+}
+
+.box > h2 {
+  color: white;
+  text-decoration: none;
+}
+
+#visitor-content h3 {
+  color: white;
+}
+
+#visitor-content a > b {
+  color: white;
+}
+
+#visitor-type-developer {
+  background: url(../images/background/developers3.jpg);
+  background-position: center center;
+  background-size: 100%;
+}
+
+#visitor-type-association {
+  background-image: url(../images/background/people.jpg);
+  background-position: center center;
+  background-size: 100%;
+}
