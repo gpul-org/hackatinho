@@ -218,7 +218,10 @@ section ul li:before {
 --------------------*/
 
 header {
-	background-image: url(../images/background/hackathon1.jpg);
+	-webkit-transition: background-image 2s ease-in-out;
+	-moz-transition: background-image 2s ease-in-out;
+	transition: background-image 2s ease-in-out	;
+	background-image: url(../images/background/bus.jpg);
 	background-repeat: none;
 	background-attachment: scroll;
 	background-position: center center;
@@ -228,7 +231,7 @@ header {
 	-o-background-size: cover;
 	text-align: center;
 	color: #fff;
-	height: 900px;
+	height: 800px;
 }
 
 header .intro-text {
@@ -862,19 +865,35 @@ and (max-width : 480px) {
 }
 }
 
-/* Location */
-#location {
-	background-image: url(../images/background/surfistas.jpg);
+#mobility {
+	background-image: url(../images/background/mobility.jpeg);
 	background-repeat: none;
 	background-attachment: scroll;
-	background-position: center center;
+	background-position: 50% 50%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 	text-align: center;
 	color: #fff;
-	height: 400px;
+	height: 450px;
+	padding-top: 150px;
+}
+
+
+/* Location */
+#location {
+	background-image: url(../images/background/agora.jpg);
+	background-repeat: none;
+	background-attachment: scroll;
+	background-position: 70% 70%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	text-align: center;
+	color: #fff;
+	height: 500px;
 }
 
 #map {
@@ -884,7 +903,7 @@ and (max-width : 480px) {
 .naming {
   margin-right: 0px;
   text-align: right;
-  padding-top: 150px;
+  padding-top: 70px;
   font-size: 10px;
 	color: white;
 	text-transform: uppercase;
@@ -892,5 +911,19 @@ and (max-width : 480px) {
 }
 
 .naming > a {
+	color: #fed136;
+}
+
+.naming-secondary {
+  margin-right: 0px;
+  text-align: right;
+  padding-top: 120px;
+  font-size: 10px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.naming-secondary > a {
 	color: #fed136;
 }
