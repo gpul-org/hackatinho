@@ -2,9 +2,9 @@
 
 var backgroundPosition = 0;
 var backgroundList = [
-  '../images/background/bus.jpg',
-  '../images/background/bicicoruna.jpg',
-  '../images/background/tren.jpg',
+  './images/background/bus.jpg',
+  './images/background/bicicoruna.jpg',
+  './images/background/tren.jpg',
 ]
 
 setInterval(function() {
